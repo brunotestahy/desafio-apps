@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Linux 0.0.0)" package="" timestamp="2017-03-27T07:06:35" id="0" hostname="brunot-ibm-com" tests="13" errors="0" failures="0" time="5.709">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="Home Page should create the home page" time="0.811" classname="Home Page"/>
+  <testcase name="Home Page should isDataReturnedFromService variable initiate with a true value" time="0.549" classname="Home Page"/>
+  <testcase name="Home Page should call loadNews when the View did load" time="0.506" classname="Home Page"/>
+  <testcase name="Home Page should call loadNews and return a success callback" time="0.492" classname="Home Page"/>
+  <testcase name="Home Page should call loadNews and return a error callback" time="0.483" classname="Home Page"/>
+  <testcase name="Home Page should call addOnlyObjectsWithImage and the array with imagens and materia kind" time="0.483" classname="Home Page"/>
+  <testcase name="Home Page should call addOnlyObjectsWithImage and the array with imagens and no materia kind" time="0.558" classname="Home Page"/>
+  <testcase name="Home Page should call goToDetailPage and navigate to Detail page" time="0.448" classname="Home Page"/>
+  <testcase name="Home Page should call goToDetailPage and navigate fail" time="0.439" classname="Home Page"/>
+  <testcase name="News Detail Page should create the news detail page" time="0.445" classname="News Detail Page"/>
+  <testcase name="News Detail Page should call loadNewsDetail method and get params correctly" time="0.455" classname="News Detail Page"/>
+  <testcase name="NewsService should define a NewService instance" time="0.026" classname="NewsService"/>
+  <testcase name="NewsService should get the news successfully" time="0.014" classname="NewsService"/>
+  <system-out>
+    <![CDATA[PhantomJS 2.1.1 (Linux 0.0.0) LOG: 'init test environment'
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: 'Hello NewsService Provider'
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) ERROR: 'Error during the news loading service => ', Object{error: 'Error'}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: HomePage{navCtrl: NavControllerMock{}, newsService: NewsService{http: Http{_backend: ..., _defaultOptions: ...}}, content: [], isDataReturnedFromService: true}
+,PhantomJS 2.1.1 (Linux 0.0.0) ERROR: 'Error during navigation => ', Object{}
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: 'Hello NewsService Provider'
+,PhantomJS 2.1.1 (Linux 0.0.0) LOG: 'Hello NewsService Provider'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

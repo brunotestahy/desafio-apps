@@ -1,0 +1,13 @@
+Instruções para execução do projeto:
+
+1- Abra o terminal na pasta raiz do projeto, a pasta InfoGloboNews;
+
+2- Para executar no navegador digite o comando ionic serve;
+
+3- Para instalar em um celular android, plugue o mesmo com cabo usb em modo debug e digite ionic run android;
+
+4- Para executar os testes unitários digite o comando npm test;
+
+5- Para ver graficamente a cobertura dos testes abra no navegador o arquivo index.html presente na pasta raiz/coverage/.
+
+6- Aproveite :D

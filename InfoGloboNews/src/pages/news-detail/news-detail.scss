@@ -1,0 +1,58 @@
+page-news-detail {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+
+  h6 {
+    line-height: 1vw;
+    font-weight: bolder;
+  }
+
+  ion-icon {
+    margin-right: 1vw;
+  }
+
+  .title {
+    font-size: 7vw;
+    color: #283453;
+    font-weight: bolder;
+  }
+
+  .subtitle {
+    font-size: 5vw;
+    color: #283453;
+    font-weight: 400;
+  }
+
+  .author-clock {
+    color: #8F8F8F;
+  }
+
+  .author {
+    color: #3B8ECC;
+  }
+
+  .card-image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 55vw;
+    margin-top: 5vw;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .card-legend {
+    font-size: 3.5vw;
+    line-height: 5vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    width: 95%;
+    font-weight: 400;
+    color: #fff;
+  }
+
+  .content {
+    line-height: 7vw;
+    font-size: 5vw
+  }
+}

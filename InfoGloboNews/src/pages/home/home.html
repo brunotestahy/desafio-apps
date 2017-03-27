@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>O GLOBO</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngIf="isDataReturnedFromService">
+    <ion-list>
+      <button ion-item *ngFor="let item of content" (click)="goToDetailPage(item)">
+        <ion-thumbnail item-left>
+          <img src="{{item['imagens'][0]['url']}}">
+        </ion-thumbnail>
+        <h5 class="news-section">{{item['secao']['nome'] | uppercase}}</h5>
+        <p class="news-title">{{item['titulo']}}</p>
+      </button>
+    </ion-list>
+  </div> <!--<div  *ngIf="isDataReturnedFromService">-->
+
+  <div *ngIf="!isDataReturnedFromService" text-center>
+    <h1>Parece que você está sem conexão ou o servidor está fora!</h1>
+    <p>Tente clicar no botão abaixo para atualizar.</p>
+    <button ion-button color="light" block (click)="loadNews()">Recarregar</button>
+  </div> <!--<div  *ngIf="!isDataReturnedFromService">-->
+
+</ion-content>

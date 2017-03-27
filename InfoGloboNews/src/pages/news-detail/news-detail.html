@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{news['secao']['nome'] | uppercase}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h2 text-center class="title">{{news['titulo']}}</h2>
+  <h5 text-center padding-horizontal class="subtitle">{{news['subTitulo']}}</h5>
+  <br>
+  <div class="author-clock">
+    <h6 text-uppercase text-center *ngIf="news['autores'][0] !== undefined"> <!--Bloco deletado caso não venha um autor-->
+      <small>por <span class="author">{{news['autores']}}</span></small>
+    </h6>
+    <h6 text-center>
+      <small>
+        <ion-icon name="md-time"></ion-icon>{{news['publicadoEm'] | date:'dd/MM/yy HH:mm'}}
+      </small>
+    </h6>
+  </div>
+
+  <div class="card-image" [ngStyle]="{'background-image':'url(' + news['imagens'][0]['url'] + ')'}">
+    <div class="card-legend">{{news['imagens'][0]['legenda']}}{{news['imagens'][0]['fonte'] ? '. Fonte: ' + news['imagens'][0]['fonte'] : ''}}</div>
+  </div>
+
+  <br>
+  <p class="content">{{news['texto']}}</p>
+</ion-content>
